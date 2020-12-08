@@ -29,9 +29,9 @@ def run(code):
 
 
 for i in range(len(inp)):
-    if inp[i][0] == "jmp":
+    if inp[i][0] == "jmp" or inp[i][0] == "nop":
         _inp = deepcopy(inp)
-        _inp[i][0] = "nop"
+        _inp[i][0] = "nop" if inp[i][0] == "jmp" else "nop"
         not_loop, res = run(_inp)
         if not_loop:
             print(res)
