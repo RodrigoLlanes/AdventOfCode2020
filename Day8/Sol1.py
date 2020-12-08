@@ -20,5 +20,5 @@ while index < len(inp):
     else:
         executed[index] = 1
 
-print(accumulator, index)  # Accumulator is the result, index value is used in Sol2
+print(accumulator)
 
